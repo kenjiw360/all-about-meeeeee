@@ -11,7 +11,7 @@ font-family: 'Lora';
 }
 
 header{
-position:absolute;
+position:fixed;
 background-color: white;
 height: 12vh;
 top:0%;
@@ -58,4 +58,11 @@ background-color: #292929;
 width: calc(100% - 40px);
 height: 15vh;
 bottom: 0%;
+}
+card{
+  display: block;
+  position: absolute;
+  height:40%;
+  width:30%;
+  border: solid 2px black;
 }
