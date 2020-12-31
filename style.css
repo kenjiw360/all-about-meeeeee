@@ -64,7 +64,7 @@ card{
   position:relative;
   height:40%;
   width:30%;
-  border: solid 2px black;
+  background-color:rgb(255,255,255);
   padding:0px;
   outline:none;
   transition:1s;
@@ -82,7 +82,7 @@ card:focus{
   opacity:1;
   margin:0px;
   font-size:50px;
-  transition:0.5s;
+  transition-delay:0.3s;
 }
 .back{
   display: block;
@@ -91,11 +91,13 @@ card:focus{
   left:50%;
   transform: translate(-50%,-50%) scaleX(-1);
   opacity:0;
-  transition:0.5s;
+  transition-delay:0.3s;
 }
 card:focus .front{
+  transition-delay:0.3s;
   opacity:0;
 }
 card:focus .back{
+  transition-delay:0.3s;
   opacity:1;
 }
