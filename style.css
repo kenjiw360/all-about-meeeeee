@@ -126,7 +126,7 @@ card:focus .back{
 }
 .timeline{
   position: absolute;
-  width: 16.6666666666666666666666666666666666666666666666666666666666666666666666666666666667%;
-  height: 67.8vh;
-  top: 12vh;
+  width: 100%;
+  height: 11.3vh;
+  left:0%;
 }
