@@ -11,7 +11,7 @@ font-family: 'Lora';
 }
 
 header{
-position:fixed;
+position:absolute;
 background-color: white;
 height: 12vh;
 top:0%;
@@ -111,7 +111,6 @@ card:focus{
   opacity:0;
   transition-delay:0.3s;
   font-size: 7px;
-  pointer-events:none;
 }
 card:focus .front{
   transition-delay:0.3s;
@@ -123,7 +122,6 @@ card:focus .front2{
 }
 card:focus .back{
   transition-delay:0.3s;
-  pointer-events: auto;
   opacity:1;
 }
 .timeline{
