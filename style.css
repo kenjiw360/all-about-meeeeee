@@ -61,8 +61,41 @@ bottom: 0%;
 }
 card{
   display: block;
-  position: absolute;
+  position:relative;
   height:40%;
   width:30%;
   border: solid 2px black;
+  padding:0px;
+  outline:none;
+  transition:1s;
+}
+card:focus{
+  transform:scaleX(-1);
+}
+.front{
+  display: block;
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  width:80%;
+  opacity:1;
+  margin:0px;
+  font-size:50px;
+  transition:0.5s;
+}
+.back{
+  display: block;
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%) scaleX(-1);
+  opacity:0;
+  transition:0.5s;
+}
+card:focus .front{
+  opacity:0;
+}
+card:focus .back{
+  opacity:1;
 }
