@@ -19,6 +19,7 @@ left:0%;
 width:100%;
 margin: 0px;
 padding: 0px;
+z-index: 999999999;
 }
 
 p{
@@ -60,6 +61,7 @@ height: 15vh;
 bottom: 0%;
 }
 card{
+  cursor:pointer;
   display: block;
   position:relative;
   height:40%;
@@ -70,6 +72,7 @@ card{
   transition:1s;
 }
 card:focus{
+  cursor:auto;
   transform:scaleX(-1);
 }
 .front{
@@ -80,24 +83,52 @@ card:focus{
   transform:translate(-50%,-50%);
   width:80%;
   opacity:1;
+  padding:0px;
   margin:0px;
-  font-size:50px;
+  text-align:center;
   transition-delay:0.3s;
+}
+.front2{
+  display: block;
+  position: absolute;
+  top:10px;
+  left:10px;
+  font-size:17.5px;
+  opacity:1;
+  padding:0px;
+  margin:0px;
+  text-align:center;
+  transition-delay:0.3s;
+  color:rgb(105,105,105);
 }
 .back{
   display: block;
   position: absolute;
+  width:80%;
   top:50%;
   left:50%;
   transform: translate(-50%,-50%) scaleX(-1);
   opacity:0;
   transition-delay:0.3s;
+  font-size: 7px;
+  pointer-events:none;
 }
 card:focus .front{
   transition-delay:0.3s;
   opacity:0;
 }
+card:focus .front2{
+  transition-delay:0.3s;
+  opacity:0;
+}
 card:focus .back{
   transition-delay:0.3s;
+  pointer-events: auto;
   opacity:1;
+}
+.timeline{
+  position: absolute;
+  width: 16.6666666666666666666666666666666666666666666666666666666666666666666666666666666667%;
+  height: 67.8vh;
+  top: 12vh;
 }
