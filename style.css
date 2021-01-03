@@ -4,7 +4,7 @@ color: #292929;
 }
 
 body{
-background-color: rgb(237, 237, 237);
+background-color: rgb(235, 235, 235);
 margin: 0px;
 padding: 0px;
 font-family: 'Lora';
@@ -13,7 +13,7 @@ font-family: 'Lora';
 header{
 position:absolute;
 background-color: white;
-height: 12vh;
+height: 15vh;
 top:0%;
 left:0%;
 width:100%;
@@ -129,4 +129,11 @@ card:focus .back{
   width: 100%;
   height: 11.3vh;
   left:0%;
+}
+td{
+  padding:5px;
+}
+td:nth-child(odd){
+  border-right: solid 2px rgb(0,0,0);
+  width:330px;
 }
